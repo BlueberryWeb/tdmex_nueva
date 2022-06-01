@@ -123,26 +123,26 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
-                    <div class="col-12 col-lg-5 col-md-12 col-sm-12 form-contactanos">
-                        <form action="">
+                    <div class="col-12 col-lg-5 col-md-12 col-sm-12 form-contactanos py-5">
+                        <form method="POST" action="mail.php">
                             <div class="mb-3 regular">
-                                <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo">
+                                <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo" required>
                             </div>
                             <div class="mb-3 regular">
-                                <input required type="email" class="form-control borde-bottom" id="exampleFormControlInput1" name="email" placeholder="Correo electrónico">
+                                <input required type="email" class="form-control borde-bottom" id="exampleFormControlInput1" name="email" placeholder="Correo electrónico" required>
                             </div>
                             <div class="mb-3">
                                 <div class="row regular">
-                                    <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="phone" placeholder="Teléfono">
+                                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pb-3">
+                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="phone" placeholder="Teléfono" required>
                                     </div>
                                     <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="object" placeholder="Asunto">
+                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="object" placeholder="Asunto" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-floating mb-3 regular">
-                                <textarea class="form-control"  id="floatingTextarea" name="message"></textarea>
+                                <textarea class="form-control"  id="floatingTextarea" name="message" required></textarea>
                                 <label for="floatingTextarea">Mensaje</label>
                             </div>
 

@@ -281,19 +281,19 @@
                     </div>
                     <div class="col-12 col-lg-4 col-sm-12 col-md-12 bg-black">
                         <div class="pt-5 text-center mx-3">
-                            <form action="">
+                            <form method="POST" action="send_mail.php">
                                 <div class="mb-4">
                                     <h1 class="h3 texto-verde pb-4 pt-3 bold">CONTÁCTANOS</h1>
                                     <hr class="hr-pequeña text-center">
                                 </div>
                                 <div class="mb-4">
-                                    <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo">
+                                    <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo" required>
                                 </div>
                                 <div class="mb-4">
-                                    <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Correo electrónico">
+                                    <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="email" placeholder="Correo electrónico" required>
                                 </div>
                                 <div class="mb-4">
-                                    <button class="btn btn-primary btn-enviar-index">
+                                    <button class="btn btn-primary btn-enviar-index" type="submit">
                                         <h6>Enviar</h6>
                                     </button>
                                 </div>
@@ -385,15 +385,15 @@
         </div>
     </div>
     <!--QUÉ DICEN NUESTROS CLIENTES-->
-    <div class="container-fluid py-5 bg-gray">
+    <div class="container-fluid py-5 bg-gris-oscuro">
         <div class="container">
             <div class="row">
-                <h1 class="text-center texto-verde">¿QUÉ DICEN NUESTROS CLIENTES</h1>
+                <h1 class="text-center texto-verde bold">¿QUÉ DICEN NUESTROS CLIENTES</h1>
                 <hr class="hr-pequeña">
             </div>
             <div class="row py-5">
-                <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
-                <div class="col-12 col-lg-8 col-sm-12 col-md-12">
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+                <div class="col-12 col-lg-10 col-sm-12 col-md-12">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-md-6 col-sm-6">
                           <div class="card">
@@ -401,8 +401,8 @@
                                 <div class="text-center">
                                     <img src="img/gabriel.png" alt="TDMEX" class="img-fluid"/>
                                 </div>
-                                <h5 class="card-title">Gabriel Herrera, <b class="h6"> Industrias Hererra S.A de C.V</b></h5>
-                                <p class="card-text">Indudablemente la atención que brindan los asesores de TDMEX no tiene igual, son comprometidos, 
+                                <h5 class="card-title medium text-center">Gabriel Herrera, <b class="h6 ligth"> Industrias Hererra S.A de C.V</b></h5>
+                                <p class="card-text regular text-center">Indudablemente la atención que brindan los asesores de TDMEX no tiene igual, son comprometidos, 
                                     conocen el tema, y resuelven tus dudas detalladamente, sin duda una gran experiencia.
                                 </p>
                             </div>
@@ -414,8 +414,8 @@
                                 <div class="text-center">
                                     <img src="img/ana.png" alt="TDMEX" class="img-fluid"/>
                                 </div>
-                                <h5 class="card-title">Ana Figueroa, <b class="h6">Alvez Herramientas S.A de C.V</b></h5>
-                                <p class="card-text">La rentabilidad de mi empresa superó el 200% gracias a la eficiencia de tener un partner
+                                <h5 class="card-title medium text-center">Ana Figueroa, <b class="h6 ligth">Alvez Herramientas S.A de C.V</b></h5>
+                                <p class="card-text regular text-center">La rentabilidad de mi empresa superó el 200% gracias a la eficiencia de tener un partner
                                     logístico como TDMEX, ya que su gran capacidad instalada me permiten transportar todo tipo de merncancías.
                                 </p>
                             </div>
@@ -423,7 +423,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col-12 col-lg-2 col-sm-12 col-md-12"></div>
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
             </div>
         </div>
     </div>
@@ -467,26 +467,26 @@
                         </div>
                     </div>
                     <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
-                    <div class="col-12 col-lg-5 col-md-12 col-sm-12 form-contactanos">
-                        <form action="">
+                    <div class="col-12 col-lg-5 col-md-12 col-sm-12 form-contactanos py-5">
+                        <form method="POST" action="mail.php">
                             <div class="mb-3 regular">
-                                <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo">
+                                <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="name" placeholder="Nombre Completo" required>
                             </div>
                             <div class="mb-3 regular">
-                                <input required type="email" class="form-control borde-bottom" id="exampleFormControlInput1" name="email" placeholder="Correo electrónico">
+                                <input required type="email" class="form-control borde-bottom" id="exampleFormControlInput1" name="email" placeholder="Correo electrónico" required>
                             </div>
                             <div class="mb-3">
                                 <div class="row regular">
-                                    <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="phone" placeholder="Teléfono">
+                                    <div class="col-12 col-lg-6 col-sm-12 col-md-12 pb-3">
+                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="phone" placeholder="Teléfono" required>
                                     </div>
                                     <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="object" placeholder="Asunto">
+                                        <input required type="text" class="form-control borde-bottom" id="exampleFormControlInput1" name="object" placeholder="Asunto" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-floating mb-3 regular">
-                                <textarea class="form-control"  id="floatingTextarea" name="message"></textarea>
+                                <textarea class="form-control"  id="floatingTextarea" name="message" required></textarea>
                                 <label for="floatingTextarea">Mensaje</label>
                             </div>
 
