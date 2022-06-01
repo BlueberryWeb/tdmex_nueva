@@ -32,6 +32,16 @@ ul{
 .none_a_decoration{
     text-decoration: none;
     color: #fff;
+} 
+a:hover{
+    
+    color: #fff;
+}
+.navbar-toggler{
+    border-color: #205046;
+}
+.navbar-toggler-icon{
+    color: #205046;
 }
 .logo-header{
     max-width: 200px;
@@ -46,6 +56,12 @@ ul{
     color: #fff;
     margin-bottom: 50px;
 }
+.unidades{
+    position: relative;
+    color: #fff;
+    margin-bottom: 300px;
+}
+
 .video_header video{
     max-width: 100%;
     padding: 0px 0px 0px 0px;
@@ -60,6 +76,10 @@ ul{
 }
 .vid-monitoreo{
     margin-bottom: 230px;
+}
+.vid-monitoreo-texto{
+    position: relative;
+    color: #fff;
 }
 .menu_superior{
     position: relative;
@@ -94,6 +114,7 @@ ul{
     border-color: #205046;
     border-radius: 20px;
     width: 180px;
+    font-family: 'Barlow Bold';
 }
 .btn-login:hover{
     background-color: #205046;
@@ -104,6 +125,7 @@ ul{
     border-color: #499b8c;
     width: 200px;
     border-radius: 20px;
+    font-family: 'Lato Regular';
 }
 .btn-enviar-index:hover{
     background-color: #205046;
@@ -114,6 +136,7 @@ ul{
     border-color: #205046;
     border-radius: 20px;
     width: 150px;
+    font-family: 'Lato Regular';
 }
 .btn-conoce:hover{
     background-color: #205046;
@@ -123,6 +146,7 @@ ul{
     background-color: #205046;
     border-color: #205046;
     border-radius: 20px;
+    font-family: 'Lato Regular';
 }
 .btn-enviar-contacto:hover{
     background-color: #205046;
@@ -131,6 +155,7 @@ ul{
 .btn-unidades{
     background-color: #205046;
     border-color: #205046;
+    font-family: 'Lato Regular';
 }
 .btn-unidades:hover{
     background-color: #205046;
@@ -141,6 +166,7 @@ ul{
     border-color: #499b8c;
     border-radius: 20px;
     width: 150px;
+    font-family: 'Lato Regular';
 }
 .btn-comenzar:hover{
     background-color: #499b8c;
@@ -161,6 +187,9 @@ ul{
     background-color: #40404A;
     color: #fff;
     border-radius: 10px;
+}
+.bg-gris-oscuro{
+    background-color: #242424;
 }
 .bg-trailer{
     background-image: url('../img/fondo-video.jpg');
@@ -207,13 +236,12 @@ ul{
     max-width: 30px;
 }
 .content-sobre-puesto{
-    position: relative;
-    
+    position: relative;  
 }
 .content-sobre-puesto input{
     border-radius: 20px;
+    font-family: 'Lato Regular';
 }
-
 .borde-left{
     border-radius: 10px 0px 0px 10px;
 }
@@ -235,6 +263,7 @@ ul{
 }
 .form-contactanos input{
     border-radius: 20px;
+    font-family: 'Lato Regular';
 }
 footer{
     background-color: #40404A;
@@ -252,4 +281,29 @@ footer a{
 }
 .diagonal-verde{
     background: linear-gradient(30deg,#205046,#205046 37%,transparent 0);
+}
+@media(max-width:400px){
+    .logo-header{
+        max-width: 100px;
+    }
+    .unidades{
+        margin-bottom: 0;
+    }
+    .titulo{
+        margin: 0;
+    }
+    .vid-monitoreo-texto{
+        color: #000000;
+    }
+    .vid-monitoreo{
+        margin-bottom: 0;
+    }
+    .header{
+        margin-bottom: 150px;
+    }
+    .navbar-collapse{
+        background: #499b8c;
+        text-align: center;
+        align-items: center;
+    }
 }
