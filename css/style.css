@@ -38,7 +38,6 @@ ul{
     color: #fff;
 } 
 a:hover{
-    
     color: #fff;
 }
 .navbar-toggler{
@@ -289,6 +288,57 @@ footer a{
     margin-top: -80px;
 }
 @media(max-width:400px){
+    .logo-header{
+        max-width: 100px;
+    }
+    .unidades{
+        margin-bottom: 0;
+    }
+    .titulo{
+        margin: 0;
+    }
+    .vid-monitoreo-texto{
+        color: #000000;
+    }
+    .vid-monitoreo-texto p{
+        color: #000000;
+    }
+    .vid-monitoreo{
+        margin-bottom: 0;
+    }
+    .header{
+        margin-bottom: 150px;
+    }
+    .navbar-collapse{
+        background: #499b8c;
+        text-align: center;
+        align-items: center;
+        padding-bottom: 15px;
+    }
+    .bg-atencion{
+        color: #000000;
+    }
+    .btn-login{
+        margin-left: 60px;
+    }
+    .img-comencemos{
+        visibility: hidden;
+    }
+    .bg-comencemos{
+        background-image: url('../img/comencemos.png');
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+    }
+    .bg-somos{
+        background-image: url('../img/bg-somos-completo.jpeg');
+        width: 100%;
+        height: 80vh;
+        margin-bottom: 50px;
+        background-size: cover;
+    }
+}
+@media(max-width:700px){
     .logo-header{
         max-width: 100px;
     }
