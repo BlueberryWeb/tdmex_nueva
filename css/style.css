@@ -288,6 +288,10 @@ footer a{
 .img-testimonio{
     margin-top: -80px;
 }
+.modal-content, .modal-header{
+    background: none;
+    border: none;
+}
 @media(max-width:400px){
     .logo-header{
         max-width: 100px;
