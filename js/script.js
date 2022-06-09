@@ -101,27 +101,13 @@ $(document).ready(function() {
 
   //RECAPTCHA
 
-function miFuncion() {
-    var response = grecaptcha.getResponse();
-
-    if (response.length == 0) {
-
-      // window.alert("Favor de llenar el captcha");
-      Swal.fire({
-        title: 'Error',
-        text: 'El campo "No soy un robot" no esta seleccionado',
-        icon: 'error',
-        confirmButtonText: 'Ok',
-        confirmButtonColor: '#000000',
-      })
-      event.preventDefault();
-      // window.history.back();       
-    } else {
-
-      Swal.fire(
-        'Correo enviado',
-        'Nos pondremos en contacto contigo a la brevedad',
-        'success'
-      )
-    }
-  }
+  $('#form').submit(function (event) {
+    event.preventDefault();
+    grecaptcha.ready(function () {
+        grecaptcha.execute('6LfVwTsgAAAAABS8UvYnHxsboJv9EoiZRQibEgaA', { action: 'registro' }).then(function (token) {
+            $('#form').prepend('<input type="hidden" name="token" value="' + token + '">');
+            $('#form').prepend('<input type="hidden" name="action" value="registro">');
+            $('#form').unbind('submit').submit();
+        });
+    });
+});

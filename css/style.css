@@ -14,6 +14,9 @@
     font-family: 'Lato Regular';
     src: url("fonts/Lato-Regular.ttf"); 
 }
+.grecaptcha-badge {
+    visibility: hidden;
+}
 html, body {
    	width: 100% !important;
    	overflow-x: hidden;
